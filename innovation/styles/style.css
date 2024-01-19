@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Work+Sans:ital@1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-color: blue;
+    padding-bottom: 20px;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  
+}
+/* .nav {
+   
+    background-color: red;
+} */
+
+.first-ul, .second-ul {
+    display: flex;
+    margin-bottom: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    
+}
+.nav ul li {
+    list-style: none;
+    padding-left: 20px;
+   
+}
+
+.nav ul li , h4 {
+    margin-top: 25px;
+}
+h4 {
+    color: white;
+    margin-left: 20px;
+    text-align: center;
+}
+
+.nav li a{
+    color: white;
+    text-decoration: none;
+}
+.nav button {
+    padding: 5px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* home section page started */
+
+/* Base styles */
+/* Base styles (Mobile First) */
+.container-1 {
+   
+    width: 90%;
+    margin: 40px auto;
+    max-width: 1200px;
+}
+.flex-display {
+    display: flex;
+    flex-direction: column;
+   
+    text-align: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+.flex-display p {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.flex-display img {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+   
+  
+}
+
+/* Responsive Styles */
+@media (min-width: 1024px) {
+    .flex-display {
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .flex-display img {
+        width: auto;
+        max-width: 50%; /* Adjust this value as needed */
+        height: auto;
+    }
+
+    .flex-display div {
+        width: 100%;
+        max-width: 600px; /* Adjust according to your content */
+    }
+}
+@media (min-width: 768px) {
+    .flex-display {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .flex-display img, .flex-display div {
+        width: 60%;
+    }
+    .flex-display img {
+      margin-right: 300px !important;
+    }
+
+    .flex-display h1, .flex-display p {
+        padding: 0 20px;
+    }
+
+}
+
+
+
+/* home section page ends*/
+
+
+/* about us starts */
+/* Base Styles for Mobile */
+/* Base Styles for Mobile */
+#about {
+    padding-bottom: 40px;
+}
+.container-2 {
+    padding: 20px;
+    margin-left: 20px;
+   columns: 200px 3;
+   column-gap: 20px;
+   
+}
+
+ h2, .h1 {
+    color: blue !important;
+    text-align: center;
+    padding-bottom: 20px;
+}
+h5 {
+    text-align: center;
+    margin: 0  auto;
+    width: 90%;
+}
+
+
+.columns {
+    /* Base styling for columns */
+    /* Apply Flexbox */
+    /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    margin-left: 20px;
+    text-align: center;
+    padding-right: 20px;
+}
+.columns h3 {
+    padding: 10px 0;
+    color: blue;
+}
+
+/* Styles for Tablets and Laptops */
+@media (min-width: 768px) {
+    .container-2 {
+        
+        margin-left: 20% !important;
+    }
+
+    .columns {
+        width: 100%; /* Adjust as needed, depending on desired width */
+        padding: 20px 15px; /* Add padding to each column */
+        background-color: aquamarine;
+      
+        
+    }
+  
+}
+
+/* Optional: Additional Media Query for Larger Screens */
+@media (min-width: 1024px) {
+    .columns {
+        width: 60%;
+        /* Adjust width for larger screens if needed */
+    }
+    .container-3 {
+        display: flex;
+        margin-top: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+
+    }
+    .columns {
+        width: 100%; /* Adjust as needed, depending on desired width */
+        padding: 20px 15px; /* Add padding to each column */
+        background-color: aquamarine;
+      
+        
+    }
+}
+@media (min-width: 769px) {
+    .columns {
+        width: 60%;
+        /* Adjust width for larger screens if needed */
+    }
+    .container-3 {
+        display: flex;
+        margin-top: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+
+    }
+    .columns {
+        width: 100%; /* Adjust as needed, depending on desired width */
+        padding: 20px 15px; /* Add padding to each column */
+        background-color: aquamarine;
+      
+        
+    }
+}
+
+
+
+/* about us ends */
